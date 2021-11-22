@@ -14,7 +14,7 @@ public class DaysBetweenDates11_15_21 {
 
     public static int getDays(String date1, String date2){
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("mm dd, yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("mmddyyyy");
         LocalDate firstDate = LocalDate.parse(date1);
         LocalDate secondDate = LocalDate.parse(date2);
 
