@@ -1,4 +1,4 @@
-package com.company;
+package com.company.October.Oct28_21;
 
 public class DifferenceOfMinAndMax10_28_21 {
 

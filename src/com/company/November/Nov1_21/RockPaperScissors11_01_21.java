@@ -1,4 +1,4 @@
-package com.company;
+package com.company.November.Nov1_21;
 //https://edabit.com/challenge/3S8XppR6Yf5mXPxij
 
 public class RockPaperScissors11_01_21 {

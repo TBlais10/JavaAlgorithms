@@ -1,13 +1,8 @@
-package com.company;
+package com.company.November.Nov15_21;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-import java.util.Calendar;
-import java.util.Date;
 
 //https://edabit.com/challenge/3hdXjfJozQySRC3gE
 public class DaysBetweenDates11_15_21 {

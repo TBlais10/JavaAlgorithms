@@ -1,4 +1,4 @@
-package com.company;
+package com.company.October.Oct28_21;
 
 public class DoubleLetters10_28_21 {
 

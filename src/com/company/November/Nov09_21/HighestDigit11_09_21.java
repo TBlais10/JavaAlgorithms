@@ -1,6 +1,4 @@
-package com.company;
-
-import java.util.Arrays;
+package com.company.November.Nov09_21;
 
 //https://edabit.com/challenge/9X8zLpBEcQsyerPgL
 public class HighestDigit11_09_21 {

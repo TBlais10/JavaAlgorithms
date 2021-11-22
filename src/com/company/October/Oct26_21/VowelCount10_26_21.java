@@ -1,4 +1,4 @@
-package com.company;
+package com.company.October.Oct26_21;
 
 //https://edabit.com/challenge/GBKphScsmDi9ek3ra
 

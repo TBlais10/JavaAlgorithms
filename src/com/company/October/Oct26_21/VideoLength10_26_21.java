@@ -1,4 +1,4 @@
-package com.company;
+package com.company.October.Oct26_21;
 //https://edabit.com/challenge/9D39q2q9yAFCDM9da
 
 public class VideoLength10_26_21 {
