@@ -1,4 +1,4 @@
-package com.company;
+package com.company.OriginalChallenges;
 
 import java.io.*;
 import java.util.Scanner;

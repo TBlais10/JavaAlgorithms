@@ -1,10 +1,10 @@
-package com.company;
+package com.company.OriginalChallenges;
 
 import java.util.*;
 
 public class Day4 {
 
-    public class Person {
+    public static class Person {
         private int age;
 
         public Person(int initialAge) {
