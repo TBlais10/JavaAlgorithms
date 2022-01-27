@@ -40,17 +40,22 @@ public class BalancedBrackets {
             bracketStack.push(s.substring(i, i + 1));
         }
 
-        System.out.println(bracketStack);
+//        System.out.println(bracketStack);
+//        System.out.println(bracketStack.get(bracketStack.size() - 2) + bracketStack.peek());
 
         while (bracketStack.size() > 1) {
             if (!bracketRef.contains(bracketStack.firstElement() + bracketStack.peek())) {
-                if (!bracketRef.contains(bracketStack.pop() + bracketStack.pop())) {
+                if (bracketRef.contains(bracketStack.get(bracketStack.size() - 2) + bracketStack.peek())) {
+//                    System.out.println(bracketStack.get(bracketStack.size() - 2) + bracketStack.peek());
+                    bracketStack.remove(bracketStack.size() - 2);
+                    bracketStack.pop();
+                } else {
                     return "NO";
                 }
             } else {
                 bracketStack.pop();
                 bracketStack.remove(bracketStack.firstElement());
-                System.out.println(bracketStack);
+//                System.out.println(bracketStack);
             }
         }
 //        System.out.println(bracketStack.firstElement() + bracketStack.pop());
@@ -71,7 +76,7 @@ public class BalancedBrackets {
 
 //        System.out.println(isBalanced("{(([)[])[]]}")); //should return NO
 //
-        System.out.println(isBalanced("{(([])[])[]}[]")); //should return YES
+//        System.out.println(isBalanced("{(([])[])[]}[]")); //should return YES
 
 
     }
