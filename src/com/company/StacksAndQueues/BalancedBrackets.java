@@ -15,6 +15,7 @@ import static java.util.stream.Collectors.*;
 
 public class BalancedBrackets {
 
+    // TODO: 2/1/2022 GET CLASS SOLUTION AND EXAMINE CODE
 
     /*
      * Complete the 'isBalanced' function below.
@@ -40,15 +41,16 @@ public class BalancedBrackets {
             bracketStack.push(s.substring(i, i + 1));
         }
 
-//        System.out.println(bracketStack);
-//        System.out.println(bracketStack.get(bracketStack.size() - 2) + bracketStack.peek());
-
         while (bracketStack.size() > 1) {
             if (!bracketRef.contains(bracketStack.firstElement() + bracketStack.peek())) {
                 if (bracketRef.contains(bracketStack.get(bracketStack.size() - 2) + bracketStack.peek())) {
 //                    System.out.println(bracketStack.get(bracketStack.size() - 2) + bracketStack.peek());
                     bracketStack.remove(bracketStack.size() - 2);
                     bracketStack.pop();
+                } else if (bracketRef.contains(bracketStack.firstElement() + bracketStack.get(1))) {
+//                    System.out.println(bracketStack.firstElement() + bracketStack.get(1));
+                    bracketStack.remove(bracketStack.firstElement());
+                    bracketStack.remove(bracketStack.get(1));
                 } else {
                     return "NO";
                 }
@@ -58,12 +60,6 @@ public class BalancedBrackets {
 //                System.out.println(bracketStack);
             }
         }
-//        System.out.println(bracketStack.firstElement() + bracketStack.pop());
-//        System.out.println(bracketStack.size());
-//        System.out.println(bracketStack.peek() + " Peek");
-//        System.out.println(bracketStack.pop() + " Pop");
-//        System.out.println(bracketStack);
-
         return "YES";
     }
 
@@ -76,7 +72,7 @@ public class BalancedBrackets {
 
 //        System.out.println(isBalanced("{(([)[])[]]}")); //should return NO
 //
-//        System.out.println(isBalanced("{(([])[])[]}[]")); //should return YES
+        System.out.println(isBalanced("{(([])[])[]}[]")); //should return YES
 
 
     }
