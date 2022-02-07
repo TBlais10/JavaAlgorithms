@@ -1,6 +1,7 @@
 package com.company.OtherChallenges;
 
 import java.io.*;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,32 +22,37 @@ public class OrganizingContainersOfBalls {
     public static String organizingContainers(List<List<Integer>> container) {
 
         HashMap<Integer, Integer> ballTotals = new HashMap<>();
-        List<Integer> containerSizes = null;
+        List<Integer> containerSizes = new ArrayList<>();
 
         for (int i = 0; i < container.size(); i++) {
-            containerSizes.add(container.get(i).size());
-
+            int containerTotal = 0;
             for (int j = 0; j < container.get(i).size(); j++) {
-                int ballTypeCount = container.get(i).get(j); //J is the type of ball starting at 0
-                if (ballTotals.containsKey(j)) { //If j is already a key in the hash map
+                containerTotal += container.get(i).get(j); //adds together the total ints for the container size
+
+                Integer ballTypeCount = container.get(i).get(j); //J is the type of ball starting at 0
+                if (!ballTotals.containsKey(j)) { //If j is already a key in the hash map
+                    ballTotals.put(j, ballTypeCount); //add the key value j and the actual value of the j position
+                } else {
                     ballTotals.put(j, ballTotals.get(j) + ballTypeCount); //Add to the value what is stored in j position of the array
                 }
-                ballTotals.put(j, ballTypeCount); //add the key value j and the actual value of the j position
             }
+                containerSizes.add(containerTotal);
         }
 
         for (Integer containerSize : containerSizes) {
             if (!ballTotals.containsValue(containerSize)) {
+                System.out.println("HashMap => " + "\n" + ballTotals);
+                System.out.println("Container Size => " + "\n" + containerSize);
+                System.out.println("Impossible");
                 return "Impossible";
             }
         }
 
+        System.out.println("HashMap => " + "\n" + ballTotals);
+        System.out.println("Possible");
         return "Possible";
     }
 
-    public static void main(String[] args) {
-
-//        System.out.println(organizingContainers([[1,1], [1,1]]));
 
        /* Sample Case 1
        2
@@ -78,7 +84,7 @@ public class OrganizingContainersOfBalls {
 
             type 0 total = 6
             type 1 total = 7
-            type 3 total = 6
+            type 2 total = 6
 
             container 1 size = 5
             container 2 size = 5
@@ -102,47 +108,3 @@ public class OrganizingContainersOfBalls {
             This is possible
         * */
     }
-
-}
-
-
-//public class Solution {
-//    public static void main(String[] args) throws IOException {
-//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-//        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-//
-//        int q = Integer.parseInt(bufferedReader.readLine().trim());
-//
-//        IntStream.range(0, q).forEach(qItr -> {
-//            try {
-//                int n = Integer.parseInt(bufferedReader.readLine().trim());
-//
-//                List<List<Integer>> container = new ArrayList<>();
-//
-//                IntStream.range(0, n).forEach(i -> {
-//                    try {
-//                        container.add(
-//                                Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-//                                        .map(Integer::parseInt)
-//                                        .collect(toList())
-//                        );
-//                    } catch (IOException ex) {
-//                        throw new RuntimeException(ex);
-//                    }
-//                });
-//
-//                String result = Result.organizingContainers(container);
-//
-//                bufferedWriter.write(result);
-//                bufferedWriter.newLine();
-//            } catch (IOException ex) {
-//                throw new RuntimeException(ex);
-//            }
-//        });
-//
-//        bufferedReader.close();
-//        bufferedWriter.close();
-//    }
-//}
-
-//}
