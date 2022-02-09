@@ -1,55 +1,34 @@
 package com.company.OtherChallenges;
 
-import java.io.*;
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
-import static java.util.stream.Collectors.toList;
 
 public class OrganizingContainersOfBalls {
-
-    /*
-     * Complete the 'organizingContainers' function below.
-     *
-     * The function is expected to return a STRING.
-     * The function accepts 2D_INTEGER_ARRAY container as parameter.
-     */
+//Challenge url ... https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem?h_r=internal-search
 
     public static String organizingContainers(List<List<Integer>> container) {
-
         HashMap<Integer, Integer> ballTotals = new HashMap<>();
         List<Integer> containerSizes = new ArrayList<>();
 
-        for (int i = 0; i < container.size(); i++) {
+        for (List<Integer> containers : container) {
             int containerTotal = 0;
-            for (int j = 0; j < container.get(i).size(); j++) {
-                containerTotal += container.get(i).get(j); //adds together the total ints for the container size
-
-                Integer ballTypeCount = container.get(i).get(j); //J is the type of ball starting at 0
-                if (!ballTotals.containsKey(j)) { //If j is already a key in the hash map
-                    ballTotals.put(j, ballTypeCount); //add the key value j and the actual value of the j position
-                } else {
-                    ballTotals.put(j, ballTotals.get(j) + ballTypeCount); //Add to the value what is stored in j position of the array
+            for (int elements = 0; elements < containers.size(); elements++) {
+                Integer ballType = containers.get(elements); //elements is the type of ball starting at 0
+                containerTotal += ballType; //adds together the total ints for the container size
+                if (!ballTotals.containsKey(elements)) { //If elements is already a key in the hash map
+                    ballTotals.put(elements, 0); //add the key value elements and the actual value of the elements position
                 }
+                ballTotals.put(elements, ballTotals.get(elements) + ballType); //Add to the value what is stored in elements position of the array
             }
-                containerSizes.add(containerTotal);
+            containerSizes.add(containerTotal);//adds to the list of Container sizes
         }
 
         for (Integer containerSize : containerSizes) {
             if (!ballTotals.containsValue(containerSize)) {
-                System.out.println("HashMap => " + "\n" + ballTotals);
-                System.out.println("Container Size => " + "\n" + containerSize);
-                System.out.println("Impossible");
                 return "Impossible";
             }
         }
-
-        System.out.println("HashMap => " + "\n" + ballTotals);
-        System.out.println("Possible");
         return "Possible";
     }
 
@@ -107,4 +86,4 @@ public class OrganizingContainersOfBalls {
 
             This is possible
         * */
-    }
+}
