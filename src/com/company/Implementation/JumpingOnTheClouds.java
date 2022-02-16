@@ -6,22 +6,22 @@ public class JumpingOnTheClouds {
         int energy = 100;
         int clouds = 0;
 
-        while (clouds < c.length) {
-            if (c[clouds] == 1) {
+        do {
+            clouds = (clouds + k) % c.length;
+
+            if (c[clouds] % 2 != 0) {
                 energy -= 2;
             }
             energy--;
 
-
-            if (clouds + k > c.length){
-                clouds = c.length - clouds;
-                continue;
-            }
-            clouds += k;
-
-        }
+        } while (clouds != 0);
 
         return energy;
+    }
+
+    public static void main(String[] args) {
+        int[] test = {1, 1, 1, 0, 1, 1, 0, 0, 0, 0};
+        System.out.println(jumpingOnClouds(test, 3));
     }
 
 }
