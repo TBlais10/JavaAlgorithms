@@ -1,4 +1,4 @@
-package com.company.October.Oct28_21;
+package com.company.twenty_twenty_one.October.Oct28_21;
 //https://edabit.com/challenge/WM5s7vuHnXdcKCEjS
 
 import java.util.Arrays;

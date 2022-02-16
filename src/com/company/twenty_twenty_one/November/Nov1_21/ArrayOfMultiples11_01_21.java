@@ -1,4 +1,4 @@
-package com.company.November.Nov1_21;
+package com.company.twenty_twenty_one.November.Nov1_21;
 //https://edabit.com/challenge/rzpucPyoyEtXPo2BG
 
 public class ArrayOfMultiples11_01_21 {

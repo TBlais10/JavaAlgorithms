@@ -1,4 +1,4 @@
-package com.company.November.Nov15_21;
+package com.company.twenty_twenty_one.November.Nov15_21;
 
 //https://edabit.com/challenge/GBKphScsmDi9ek3ra
 public class HowManyVowels11_15_21 {

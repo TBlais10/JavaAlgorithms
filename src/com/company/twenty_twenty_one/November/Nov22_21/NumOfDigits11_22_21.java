@@ -1,4 +1,4 @@
-package com.company.November.Nov22_21;
+package com.company.twenty_twenty_one.November.Nov22_21;
 //https://edabit.com/challenge/z9ofdqhTYi9tdCj5T
 public class NumOfDigits11_22_21 {
 

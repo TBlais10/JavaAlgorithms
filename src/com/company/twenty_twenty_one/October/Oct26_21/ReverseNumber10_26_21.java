@@ -1,4 +1,4 @@
-package com.company.October.Oct26_21;
+package com.company.twenty_twenty_one.October.Oct26_21;
 //https://edabit.com/challenge/tiyPFonvAJ8e6H9jS
 
 public class ReverseNumber10_26_21 {
