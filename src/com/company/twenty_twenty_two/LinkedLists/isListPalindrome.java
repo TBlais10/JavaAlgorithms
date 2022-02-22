@@ -1,5 +1,7 @@
 package com.company.twenty_twenty_two.LinkedLists;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -19,22 +21,20 @@ public class isListPalindrome {
         if (l == null) {
             return true;
         }
-
+        List<Integer> values = new ArrayList<>();
         ListNode<Integer> traveler = l;
-        int count = 0;
 
-
-        while (traveler.next != null) { //Changes l to the last node in the list.
-            count++;
+        while (traveler != null) { //Changes l to the last node in the list.
+            values.add(traveler.value);
             traveler = traveler.next;
         }
 
-        if (!Objects.equals(l.value, traveler.value)) {
-            return false;
+        for (int i = 0; i < values.size() / 2; i++) {
+            if (!Objects.equals(values.get(i), values.get(values.size() - 1 - i))){
+                return false;
+            }
         }
 
         return true;
     }
-
-
 }
