@@ -1,5 +1,7 @@
 package com.company.twenty_twenty_two.LinkedLists;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +17,7 @@ public class mergeTwoLinkedLists {
         ListNode<T> next;
     }
 
-    ListNode<Integer> solution(ListNode<Integer> l1, ListNode<Integer> l2) {
+    public ListNode<Integer> solution(ListNode<Integer> l1, ListNode<Integer> l2) {
         if (l1 == null && l2 == null) {
             return l1;
         }
@@ -29,32 +31,54 @@ public class mergeTwoLinkedLists {
         }
 
         ListNode<Integer> merged = null;
-        ListNode<Integer> t1 = l1;
-        ListNode<Integer> t2 = l2;
 
-        while (true) {
-            if (t1.value >= t2.value) {
-                //add t1
-                merged = l1;
-                merged.next = solution(l1.next, l2);
-            } else {
-                //add t2
-                merged = l2;
-                merged.next = solution(l1, l2.next);
-            }
-            return merged;
+        if (l1.value >= l2.value) {
+            //add t2 if less than t1;
+            merged = l2;
+            merged.next = solution(l1, l2.next);
+        } else {
+            //add t1 if less than t2
+            merged = l1;
+            merged.next = solution(l1.next, l2);
         }
+
+        return merged;
 
     }
 
-//    public static ListNode<Integer> sort(ListNode<Integer> head){
-//        if (head == null || head.next == null){
-//            return head;
-//        }
-//
-//        ListNode<Integer>[] array =
-//
-//        return sort()
-//    }
 
 }
+
+/* working on a solution that would avoid a stack overflow
+
+        if (l1 == null && l2 == null) {
+            return l1;
+        }
+
+        if (l1 == null) {
+            return l2;
+        }
+
+        if (l2 == null) {
+            return l1;
+        }
+
+        ListNode<Integer> merged = null;
+        ListNode<Integer> traveler = merged;
+
+        while(l1 != null || l2 != null){
+        if (l1.value >= l2.value) {
+            //add t2 if less than t1merged = t2;
+            merged = l2;
+            l2 = l2.next;
+//            merged.next = solution(l1, l2.next);
+        } else {
+            //add t1 if less than t2
+            merged = l1;
+            l1 = l1.next;
+//            merged.next = solution(l1.next, l2);
+        }
+            merged = merged.next;
+        }
+
+        return traveler;*/
