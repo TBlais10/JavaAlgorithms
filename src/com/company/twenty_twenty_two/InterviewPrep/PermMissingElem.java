@@ -19,7 +19,7 @@ public class PermMissingElem {
 
     public static int solution(int[] a){
         if (a.length == 0){
-            return 0;
+            return 1;
         }
 
         long total = 0;
