@@ -1,4 +1,4 @@
-package com.company.twenty_twenty_two.InterviewPrep;
+package com.company.twenty_twenty_two.InterviewPrep.TimeComplexity;
 
 import java.util.Arrays;
 import java.util.List;
