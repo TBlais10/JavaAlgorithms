@@ -20,28 +20,27 @@ public class HouseRobber {
     * */
 
     static int solution(int[] nums) {
-        if (nums.length == 1){
-            return nums[0];
-        }
-        if (nums.length == 0){
-            return 0;
-        }
+        int answer = 0;
+        int largestNum = 0;
+        int index = 0;
 
-        int evenSum = 0;
-        int oddSum = 0;
-
-        for (int i = 0; i < nums.length; i += 2) {
-            evenSum += nums[i];
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > largestNum){
+                largestNum = nums[i];
+                index = i;
+            }
         }
 
-        for (int i = 1; i < nums.length; i+=2) {
-            oddSum += nums[i];
+        if (index == index % 2){
+            for (int i = 0; i < nums.length; i += 2) {
+                answer += nums[i];
+            }
+        } else {
+            for (int i = 1; i < nums.length; i+=2) {
+                answer += nums[i];
+            }
         }
-
-        System.out.println(evenSum + " - Even Sum");
-        System.out.println(oddSum + " - Odd Sum");
-
-        return 0;
+        return answer;
     }
 
     public static void main(String[] args) {
