@@ -27,18 +27,23 @@ package com.company.twenty_twenty_two.March;
 public class climbingStairs {
 
     static int solution(int n) {
-        if (n == 1 || n == 2){
-            return n;
+        int[] fib = new int[n + 2];
+        fib[0] = 1;
+        fib[1] = 0;
+
+        int answer = 1;
+
+        for (int i = 2; i <= n; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2];
+            answer +=fib[i];
         }
-
-        int answer = 0;
-
 
         return answer;
 
     }
     public static void main(String[] args) {
-        System.out.println(solution(34));
+        System.out.println(solution(4)); //should be 5
+        System.out.println(solution(17)); // should be 2584
     }
 
 }
