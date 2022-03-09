@@ -1,4 +1,4 @@
-package com.company.Implementation;
+package com.company.OtherChallenges.Implementation;
 
 import java.util.Arrays;
 import java.util.HashMap;

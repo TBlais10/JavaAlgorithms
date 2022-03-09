@@ -1,4 +1,4 @@
-package com.company.Implementation;
+package com.company.OtherChallenges.Implementation;
 
 public class JumpingOnTheClouds {
 
