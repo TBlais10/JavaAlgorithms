@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdd37eb7-dbac-4b68-9529-0e6fed73ea89" name="Default Changelist" comment="Began making progress on the day 10 challenge of Hacker Rank. Stuck in how to break away when the loops finds a 0 in the binary and needs to continue looping thru to find the consecutive numbers.">
-      <change afterPath="$PROJECT_DIR$/src/com/company/OtherChallenges/UtopianTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/OtherChallenges/ClimbingLeaderboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/OtherChallenges/JumpingOnClouds_OG.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Implementation/Birds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/OtherChallenges/Implementation/Birds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Implementation/JumpingOnTheClouds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/OtherChallenges/Implementation/JumpingOnTheClouds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Implementation/SherlockAndAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/OtherChallenges/Implementation/SherlockAndAnagrams.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,13 +101,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.UtopianTree">
-    <configuration name="BalancedBrackets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.StacksAndQueues.BalancedBrackets" />
+  <component name="RunManager" selected="Application.JumpingOnClouds_OG">
+    <configuration name="Birds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.OtherChallenges.Implementation.Birds" />
       <module name="HackerRankChallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.StacksAndQueues.*" />
+          <option name="PATTERN" value="com.company.OtherChallenges.Implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Birds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.OtherChallenges.Implementation.Birds" />
+    <configuration name="JumpingOnClouds_OG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.OtherChallenges.JumpingOnClouds_OG" />
       <module name="HackerRankChallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.OtherChallenges.Implementation.*" />
+          <option name="PATTERN" value="com.company.OtherChallenges.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JumpingOnClouds_OG" />
         <item itemvalue="Application.UtopianTree" />
         <item itemvalue="Application.JumpingOnTheClouds" />
         <item itemvalue="Application.SherlockAndAnagrams" />
         <item itemvalue="Application.Birds" />
-        <item itemvalue="Application.BalancedBrackets" />
       </list>
     </recent_temporary>
   </component>
