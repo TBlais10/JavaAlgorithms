@@ -17,17 +17,16 @@ import java.util.List;
 public class JumpingOnClouds_OG {
 
     public static int jumpingOnClouds(List<Integer> c) {
-        int answer = 1;
+        int answer = -1;
+        int count = 0;
 
-        for (int i = 1; i < c.size() - 1; i++) {
-            if (c.get(i) == 0) {
-                answer++;
-                System.out.println("Added = " + i);
+        while (count != c.size()) {
+            if (count + 2 < c.size() && c.get(count + 2) == 0) {
+                count += 2;
+            } else {
+                count++;
             }
-            if (c.get(i - 1) == 0 && c.get(i) == 0 && c.get(i + 1) == 0) {
-                System.out.println("Skipped = " + i);
-                i++;
-            }
+            answer += 1;
         }
 
         return answer;
@@ -45,6 +44,7 @@ public class JumpingOnClouds_OG {
         test.add(1);
         test.add(0);
         test.add(0);
+        //listof
 
         System.out.println(jumpingOnClouds(test)); //expecting 6
     }
