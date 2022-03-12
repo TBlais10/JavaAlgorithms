@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdd37eb7-dbac-4b68-9529-0e6fed73ea89" name="Default Changelist" comment="Began making progress on the day 10 challenge of Hacker Rank. Stuck in how to break away when the loops finds a 0 in the binary and needs to continue looping thru to find the consecutive numbers.">
-      <change afterPath="$PROJECT_DIR$/src/com/company/OtherChallenges/ProblemSolving/CompareTheTriplets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/OtherChallenges/ProblemSolving/PlusMinus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,20 +100,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.JumpingOnClouds_OG">
-    <configuration name="Birds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.OtherChallenges.Implementation.Birds" />
-      <module name="HackerRankChallenges" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.OtherChallenges.Implementation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.PlusMinus">
     <configuration name="JumpingOnClouds_OG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.OtherChallenges.JumpingOnClouds_OG" />
       <module name="HackerRankChallenges" />
@@ -133,6 +120,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.company.OtherChallenges.Implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlusMinus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.OtherChallenges.ProblemSolving.PlusMinus" />
+      <module name="HackerRankChallenges" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.OtherChallenges.ProblemSolving.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PlusMinus" />
         <item itemvalue="Application.JumpingOnClouds_OG" />
         <item itemvalue="Application.UtopianTree" />
         <item itemvalue="Application.JumpingOnTheClouds" />
         <item itemvalue="Application.SherlockAndAnagrams" />
-        <item itemvalue="Application.Birds" />
       </list>
     </recent_temporary>
   </component>
