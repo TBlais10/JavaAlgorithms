@@ -1,6 +1,7 @@
 package com.company.OtherChallenges;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -13,25 +14,35 @@ public class ClimbingLeaderboard {
 
         List<Integer> answer = new ArrayList<>();
 
-        for (int i = 0; i < player.size() ; i++) {
-            int currentPlayer = player.get(i);
+        for (int currentPlayer : player) {
 
-            for (int j = 0; j < ranked.size() - 1; j++) {
+            int count = 0;
+            for (int j = 0; j < ranked.size(); j++) {
+
                 int currentRank = ranked.get(j);
 
-                if (Objects.equals(ranked.get(j + 1), ranked.get(j))){
-                    ranked.remove(j);
-                }
-
-                if (currentPlayer >= currentRank){
-                    answer.add(j + 1);
+                if (currentPlayer >= currentRank) {
+                    count = j;
                     break;
                 }
 
             }
+            if (currentPlayer <= ranked.get(ranked.size() - 1)) {
+                answer.add(ranked.size() -1);
+            } else {
+                answer.add(count);
+            }
 
         }
         return answer;
+    }
+
+    public static void main(String[] args) {
+        List<Integer> rankedTest = Arrays.asList(100, 100, 50, 40, 40, 20, 10);
+        List<Integer> playerTest = Arrays.asList(5, 25, 50, 120);
+        //expecting 6, 4, 2, 1
+
+        System.out.println(climbingLeaderboard(rankedTest, playerTest));
     }
 
     /*
