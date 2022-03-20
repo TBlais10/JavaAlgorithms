@@ -52,12 +52,26 @@ public class Day12 {
     static class Student extends Person {
         private int[] testScores;
 
-        Student(String firstName, String lastName, int identification) {
+        Student(String firstName, String lastName, int identification, int[] testScores) {
             super(firstName, lastName, identification);
         }
 
-        public void calculate() {
-            System.out.println(Arrays.stream(testScores).sum() / testScores.length);
+        public String calculate() {
+            int total = Arrays.stream(testScores).sum() / testScores.length;
+
+            if (total <= 100 && total >= 90) {
+                return "O";
+            } else if (total <= 90 && total >= 80) {
+                return "E";
+            } else if (total <= 80 && total >= 70) {
+                return "A";
+            } else if (total <= 70 && total >= 55) {
+                return "P";
+            } else if (total <= 55 && total >= 40) {
+                return "D";
+            } else {
+                return "T";
+            }
         }
 
     }
