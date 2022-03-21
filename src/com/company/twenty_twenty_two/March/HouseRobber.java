@@ -1,5 +1,11 @@
 package com.company.twenty_twenty_two.March;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class HouseRobber {
 
     /*Robbing a house, every house has money. Can't rob in one night because they have connected security systems.
@@ -17,30 +23,30 @@ public class HouseRobber {
 
     could there be two diffrent loops? a negative loop that goes thru the array backwards and one that goes forwards? depends on the position of the highest num?
     check the total of both even and odd loops?
+    cache[2] = Math.max(nums[2] + cache[0 /2 -2/], cache[1 /2 - 1/]);
+    Fibonacci Sequence principles!!!!!
     * */
 
     static int solution(int[] nums) {
-        int answer = 0;
-        int largestNum = 0;
-        int index = 0;
-
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] > largestNum){
-                largestNum = nums[i];
-                index = i;
-            }
+        if (nums == null || nums.length == 0){
+            return 0;
+        }
+        if (nums.length == 1){
+            return nums[0];
+        }
+        if (nums.length == 2){
+            return Math.max(nums[0], nums[1]);
         }
 
-        if (index == index % 2){
-            for (int i = 0; i < nums.length; i += 2) {
-                answer += nums[i];
-            }
-        } else {
-            for (int i = 1; i < nums.length; i+=2) {
-                answer += nums[i];
-            }
+        List<Integer> cache = new ArrayList<>();
+        cache.add(nums[0]);
+        cache.add(Math.max(nums[0], nums[1]));
+
+        for (int i = 2; i < nums.length; i++) {
+            cache.add(Math.max(nums[i] + cache.get(i - 2), cache.get(i - 1)));
         }
-        return answer;
+
+        return Collections.max(cache);
     }
 
     public static void main(String[] args) {
