@@ -54,8 +54,21 @@ public class AddTwoHugeIntegers {
     }
 
     public static void main(String[] args) {
-//        ListNode<Integer> testA =
-//                System.out.println(solution());
+//        ListNode<Integer> testA = null;
+//        testA.value = 9876;
+//        testA = testA.next;
+//        testA.value = 5432;
+//        testA = testA.next;
+//        testA.value = 1999;
+//        testA = testA.next;
+//
+//        ListNode<Integer> testB = null;
+//        testB = testB.next;
+//        testB.value = 1;
+//        testB = testB.next;
+//        testB.value = 8001;
+//        testB = testB.next;
+//        System.out.println(solution(testA, testB));
     }
 
 }
