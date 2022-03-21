@@ -54,26 +54,34 @@ public class Day12 {
 
         Student(String firstName, String lastName, int identification, int[] testScores) {
             super(firstName, lastName, identification);
+            this.testScores = testScores;
         }
 
-        public String calculate() {
+        public char calculate() {
             int total = Arrays.stream(testScores).sum() / testScores.length;
 
-            if (total <= 100 && total >= 90) {
-                return "O";
-            } else if (total <= 90 && total >= 80) {
-                return "E";
-            } else if (total <= 80 && total >= 70) {
-                return "A";
-            } else if (total <= 70 && total >= 55) {
-                return "P";
-            } else if (total <= 55 && total >= 40) {
-                return "D";
-            } else {
-                return "T";
+            return (total > 89 ? 'O' : total > 79 ? 'E' : total > 69? 'A' : total > 54 ? 'P' : total > 39 ? 'D' : 'T');
             }
         }
 
     }
+
+//            int total = 0;
+//    for (int score : testScores) {
+//            total += score;
+//            }
+//            total /= testScores.length;
+/*if (total >= 90) {
+                return 'O';
+            } else if (total >= 80) {
+                return 'E';
+            } else if (total >= 70) {
+                return 'A';
+            } else if (total >= 55) {
+                return 'P';
+            } else if (total >= 40) {
+                return 'D';
+            }
+                return 'T';*/
 
 }
