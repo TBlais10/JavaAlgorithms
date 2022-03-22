@@ -1,10 +1,9 @@
 package com.company.twenty_twenty_two.March;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+//https://app.codesignal.com/interview-practice/task/XBWN6DYRqPrKdMZs8/solutions?solutionId=sTqHRhy3PXwjc4xjP
 
 public class HouseRobber {
 
