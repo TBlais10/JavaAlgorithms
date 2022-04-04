@@ -27,13 +27,20 @@ public class ClimbingLeaderboard {
         List<Integer> answer = new ArrayList<>();
         int count = 0;
 
-        for (int i = player.size() - 1; i > 0; i--) {
-            for (int j = 0; j < ranked.size(); System.out.println(j)) {
+        for (int i = player.size() - 1; i >= 0; i--) {
+            for (int j = count; j < ranked.size(); System.out.println(j)) {
                 if (player.get(i) >= ranked.get(j)) {
                     answer.add(j);
+                    System.out.println(j + " -> First condition");
+                    System.out.println(count + " -> Count");
                     break;
+                }/* else if (player.get(i) <= ranked.get(j)) {
+                    answer.add(j);
+                    System.out.println(j + " -> Second Condition");
+                    break;
+                }*/ else {
+                    j++;
                 }
-                j++;
             }
         }
         return answer;
