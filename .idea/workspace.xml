@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdd37eb7-dbac-4b68-9529-0e6fed73ea89" name="Default Changelist" comment="Began making progress on the day 10 challenge of Hacker Rank. Stuck in how to break away when the loops finds a 0 in the binary and needs to continue looping thru to find the consecutive numbers.">
-      <change afterPath="$PROJECT_DIR$/src/com/company/OriginalChallenges/Day24.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/OriginalChallenges/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/OriginalChallenges/Day25.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HackerRankChallenges/com/company/OriginalChallenges/Day15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HackerRankChallenges/com/company/OriginalChallenges/Day15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HackerRankChallenges/com/company/OriginalChallenges/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HackerRankChallenges/com/company/OriginalChallenges/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HackerRankChallenges/com/company/OtherChallenges/ClimbingLeaderboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HackerRankChallenges/com/company/OtherChallenges/ClimbingLeaderboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/OriginalChallenges/Day15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/OriginalChallenges/Day15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/OtherChallenges/ClimbingLeaderboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/OtherChallenges/ClimbingLeaderboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +102,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="Application.ClimbingLeaderboard">
+  <component name="RunManager" selected="Application.Day25">
     <configuration name="ClimbingLeaderboard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.OtherChallenges.ClimbingLeaderboard" />
       <module name="HackerRankChallenges" />
@@ -131,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SherlockAndAnagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.OtherChallenges.Implementation.SherlockAndAnagrams" />
+    <configuration name="Day25" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.OriginalChallenges.Day25" />
       <module name="HackerRankChallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.OtherChallenges.Implementation.*" />
+          <option name="PATTERN" value="com.company.OriginalChallenges.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Staircase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.OtherChallenges.ProblemSolving.Staircase" />
+    <configuration name="SherlockAndAnagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.OtherChallenges.Implementation.SherlockAndAnagrams" />
       <module name="HackerRankChallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.OtherChallenges.ProblemSolving.*" />
+          <option name="PATTERN" value="com.company.OtherChallenges.Implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Day25" />
         <item itemvalue="Application.ClimbingLeaderboard" />
         <item itemvalue="Application.SherlockAndAnagrams" />
         <item itemvalue="Application.Day11" />
         <item itemvalue="Application.TimeConversion" />
-        <item itemvalue="Application.Staircase" />
       </list>
     </recent_temporary>
   </component>
