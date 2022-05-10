@@ -22,49 +22,33 @@ public class BalancedBrackets {
      *
      * The function is expected to return a STRING.
      * The function accepts STRING s as parameter.
+     *
+     * Returning thoughts on solving algorithm...
+     *
+     * the list should be an even sized string...if not it fails instantly
+     * check for half of the string. If it matches that position of the string then continue. if not, fail it.
      */
 
     public static String isBalanced(String s) {
+        HashMap<Character, Character> reference = new HashMap<>();
+        reference.put('{', '}');
+        reference.put('(', ')');
+        reference.put('[', ']');
 
-        if (s.length() % 2 != 0) {
-            return "NO";
-        }
+        Deque<Character> stack = new LinkedList<>();
 
-        Stack<String> bracketStack = new Stack<>();
-
-        HashSet<String> bracketRef = new HashSet<>();
-        bracketRef.add("()");
-        bracketRef.add("[]");
-        bracketRef.add("{}");
-
-        for (int i = 0; i < s.length(); i++) {
-            bracketStack.push(s.substring(i, i + 1));
-        }
-
-        while (bracketStack.size() > 1) {
-            if (!bracketRef.contains(bracketStack.firstElement() + bracketStack.peek())) {
-                if (bracketRef.contains(bracketStack.get(bracketStack.size() - 2) + bracketStack.peek())) {
-//                    System.out.println(bracketStack.get(bracketStack.size() - 2) + bracketStack.peek());
-                    bracketStack.remove(bracketStack.size() - 2);
-                    bracketStack.pop();
-                } else if (bracketRef.contains(bracketStack.firstElement() + bracketStack.get(1))) {
-//                    System.out.println(bracketStack.firstElement() + bracketStack.get(1));
-                    bracketStack.remove(bracketStack.firstElement());
-                    bracketStack.remove(bracketStack.get(1));
-                } else {
-                    return "NO";
-                }
-            } else {
-                bracketStack.pop();
-                bracketStack.remove(bracketStack.firstElement());
-//                System.out.println(bracketStack);
+        for (Character bracket : s.toCharArray()) {
+            if (reference.containsKey(bracket)){
+                stack.push(bracket);
+            } else if (!bracket.equals(reference.get(stack.poll()))){
+                return "NO";
             }
         }
         return "YES";
     }
 
     public static void main(String[] args) {
-//        System.out.println(isBalanced("{[(])}")); //Should return NO
+        System.out.println(isBalanced("{[(])}")); //Should return NO
 //        System.out.println(isBalanced("{[()]}")); //Should return YES
 //        System.out.println(isBalanced("{{[[(())]]}}"));//should return YES
 
@@ -72,35 +56,9 @@ public class BalancedBrackets {
 
 //        System.out.println(isBalanced("{(([)[])[]]}")); //should return NO
 //
-        System.out.println(isBalanced("{(([])[])[]}[]")); //should return YES
+//        System.out.println(isBalanced("{(([])[])[]}[]")); //should return YES
 
 
-    }
-
-}
-
-class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
-        int t = Integer.parseInt(bufferedReader.readLine().trim());
-
-        IntStream.range(0, t).forEach(tItr -> {
-            try {
-                String s = bufferedReader.readLine();
-
-                String result = BalancedBrackets.isBalanced(s);
-
-                bufferedWriter.write(result);
-                bufferedWriter.newLine();
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
-
-        bufferedReader.close();
-        bufferedWriter.close();
     }
 
 }
