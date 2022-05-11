@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdd37eb7-dbac-4b68-9529-0e6fed73ea89" name="Default Changelist" comment="Began making progress on the day 10 challenge of Hacker Rank. Stuck in how to break away when the loops finds a 0 in the binary and needs to continue looping thru to find the consecutive numbers.">
-      <change afterPath="$PROJECT_DIR$/src/com/company/OriginalChallenges/Day18.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/StacksAndQueues/BalancedBrackets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StacksAndQueues/BalancedBrackets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,11 +96,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.BalancedBrackets">
+  <component name="RunManager" selected="Application.Algorithms">
+    <configuration name="Algorithms" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="16 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BalancedBrackets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.StacksAndQueues.BalancedBrackets" />
       <module name="HackerRankChallenges" />
@@ -168,6 +176,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Algorithms" />
+      <item itemvalue="Application.BalancedBrackets" />
+      <item itemvalue="Application.ClimbingLeaderboard" />
+      <item itemvalue="Application.Day11" />
+      <item itemvalue="Application.Day25" />
+      <item itemvalue="Application.SherlockAndAnagrams" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BalancedBrackets" />
