@@ -16,8 +16,7 @@ import java.util.Arrays;
 * We are still gonna need two arrays...but for minimum swaps...get the numbers in numerical order by using i + j
 *
 * its using the index...
-*
-* Time complexity needs to go down for solutions 10, 11, 12, and 14*/
+*/
 public class MinimumSwap2 {
 
     // Complete the minimumSwaps function below.
@@ -25,13 +24,15 @@ public class MinimumSwap2 {
         int count = 0;
 
         for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - 1; j++) {
-                if (arr[i] != i + 1 && arr[j + 1] == i + 1) {
-                    int temp = arr[i];
-                    arr[i] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    count++;
+            if (arr[i] != i + 1) {
+                int track = i;
+                while (arr[track] != i + 1){
+                    track++;
                 }
+                int temp = arr[track];
+                arr[track] = arr[i];
+                arr[i] = temp;
+                count++;
             }
         }
 
@@ -46,13 +47,18 @@ public class MinimumSwap2 {
     }
 
 }
-/*for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
-                if (arr[j] > arr[j + 1]){
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    count++;
-                }
-            }
-        }*/
+ /*   int count = 0;
+
+        for (int i = 0; i < arr.length - 1; i++) {
+        for (int j = 0; j < arr.length - 1; j++) {
+        if (arr[i] != i + 1 && arr[j + 1] == i + 1) {
+        int temp = arr[i];
+        arr[i] = arr[j + 1];
+        arr[j + 1] = temp;
+        count++;
+        }
+        }
+        }
+
+        System.out.println(Arrays.toString(arr));
+        return count;*/
