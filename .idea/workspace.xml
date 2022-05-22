@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdd37eb7-dbac-4b68-9529-0e6fed73ea89" name="Default Changelist" comment="Began making progress on the day 10 challenge of Hacker Rank. Stuck in how to break away when the loops finds a 0 in the binary and needs to continue looping thru to find the consecutive numbers.">
-      <change afterPath="$PROJECT_DIR$/src/com/company/HackerRankAlgorithms/MinimumSwap2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/HackerRankAlgorithms/TwoStrings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAlgorithms/com/company/HackerRankAlgorithms/MinimumSwap2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAlgorithms/com/company/HackerRankAlgorithms/MinimumSwap2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +105,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.MinimumSwap2">
+  <component name="RunManager" selected="Application.TwoStrings">
     <configuration name="Algorithms" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="16 (2)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -164,12 +165,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SherlockAndAnagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.HackerRankAlgorithms.Implementation.SherlockAndAnagrams" />
+    <configuration name="TwoStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.HackerRankAlgorithms.TwoStrings" />
       <module name="JavaAlgorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.HackerRankAlgorithms.Implementation.*" />
+          <option name="PATTERN" value="com.company.HackerRankAlgorithms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,16 +194,16 @@
       <item itemvalue="Application.BalancedBrackets" />
       <item itemvalue="Application.ClimbingLeaderboard" />
       <item itemvalue="Application.Day25" />
-      <item itemvalue="Application.SherlockAndAnagrams" />
       <item itemvalue="Application.MinimumSwap2" />
+      <item itemvalue="Application.TwoStrings" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TwoStrings" />
         <item itemvalue="Application.MinimumSwap2" />
         <item itemvalue="Application.BalancedBrackets" />
         <item itemvalue="Application.Day25" />
         <item itemvalue="Application.ClimbingLeaderboard" />
-        <item itemvalue="Application.SherlockAndAnagrams" />
       </list>
     </recent_temporary>
   </component>
