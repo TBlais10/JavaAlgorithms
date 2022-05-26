@@ -1,4 +1,5 @@
 package com.company.HackerEarth;
+//https://www.hackerearth.com/problem/algorithm/calculate-cost-ecebf9f8-444b018f/
 
 /*NOTES ON ALGORITHM
 * Input is x, k, price int[], and N
@@ -23,17 +24,17 @@ package com.company.HackerEarth;
 import java.util.*;
 
 public class CalculateCost {
-    public static long getCost(long N, long k, long[] price, long X){
+    public static long getCost(int N, int k, int[] price, int X){
         Set<Long> set = new HashSet<>();
         for (long num : price) {
             set.add(num);
         }
 
-        return (N - set.size()) * X;
+        return ((long) (set.size() - k) * X) < 0 ? 0: (long) (set.size() - k) * X;
     }
 
     public static void main(String[] args) {
-        long[] test = {1, 2, 3, 1};
+        int[] test = {1, 2, 3, 1};
 
         System.out.println(getCost(4, 2,test , 5)); //expecting 5;
     }
@@ -55,4 +56,6 @@ public class CalculateCost {
             }
 //            System.out.println(price[i]);
             return total - totalB;
+
+            edge case hint - can we guarentee that we are guarinteeed to not remember everything? Can we remember all numbers? yes
         }*/

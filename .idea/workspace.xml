@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdd37eb7-dbac-4b68-9529-0e6fed73ea89" name="Default Changelist" comment="Began making progress on the day 10 challenge of Hacker Rank. Stuck in how to break away when the loops finds a 0 in the binary and needs to continue looping thru to find the consecutive numbers.">
-      <change afterPath="$PROJECT_DIR$/src/com/company/HackerEarth/CalculateCost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAlgorithms/com/company/HackerEarth/MaximumSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAlgorithms/com/company/HackerEarth/MaximumSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/HackerEarth/AmicaScratch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/HackerEarth/MaximumSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HackerEarth/MaximumSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAlgorithms/com/company/HackerEarth/CalculateCost.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAlgorithms/com/company/HackerEarth/CalculateCost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/HackerEarth/CalculateCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HackerEarth/CalculateCost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,11 +288,6 @@
           <url>file://$PROJECT_DIR$/src/com/company/ThirtyDaysOfCode/Day1.java</url>
           <line>11</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/HackerEarth/CalculateCost.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
