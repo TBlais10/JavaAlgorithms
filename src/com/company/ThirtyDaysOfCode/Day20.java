@@ -3,6 +3,8 @@ package com.company.ThirtyDaysOfCode;
 /*NOTES
 * Bubble sort is involved*/
 
+// TODO: 6/9/2022 Double check work in HackerRank 
+
 import java.util.Arrays;
 import java.util.List;
 
