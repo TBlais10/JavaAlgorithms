@@ -24,11 +24,7 @@ public class Day25 {
 
         String answer = "";
         for (int i = 2; i < Math.sqrt(n); i++) {
-            if (n % i == 0){
-                answer = "Not Prime";
-            } else {
-                answer = "Prime";
-            }
+            answer = n % i == 0 ? "Not Prime" : "Prime";
         }
        return answer;
     }

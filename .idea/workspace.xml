@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdd37eb7-dbac-4b68-9529-0e6fed73ea89" name="Default Changelist" comment="Began making progress on the day 10 challenge of Hacker Rank. Stuck in how to break away when the loops finds a 0 in the binary and needs to continue looping thru to find the consecutive numbers.">
-      <change afterPath="$PROJECT_DIR$/src/com/company/ThirtyDaysOfCode/Day23.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ThirtyDaysOfCode/Day20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ThirtyDaysOfCode/Day20.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ThirtyDaysOfCode/Day25.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ThirtyDaysOfCode/Day25.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +140,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day25" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.ThirtyDaysOfCode.Day25" />
+      <module name="JavaAlgorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.ThirtyDaysOfCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MaximumSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.HackerEarth.MaximumSum" />
       <module name="JavaAlgorithms" />
@@ -165,19 +179,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.HackerRankAlgorithms.TwoStrings" />
-      <module name="JavaAlgorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.HackerRankAlgorithms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,18 +193,18 @@
     <list>
       <item itemvalue="Application.Algorithms" />
       <item itemvalue="Application.MinimumSwap2" />
-      <item itemvalue="Application.TwoStrings" />
       <item itemvalue="Application.MaximumSum" />
       <item itemvalue="Application.CalculateCost" />
       <item itemvalue="Application.Day20" />
+      <item itemvalue="Application.Day25" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Day20" />
+        <item itemvalue="Application.Day25" />
         <item itemvalue="Application.CalculateCost" />
         <item itemvalue="Application.MaximumSum" />
         <item itemvalue="Application.MinimumSwap2" />
-        <item itemvalue="Application.TwoStrings" />
       </list>
     </recent_temporary>
   </component>

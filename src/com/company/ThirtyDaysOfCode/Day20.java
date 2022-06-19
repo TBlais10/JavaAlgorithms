@@ -3,30 +3,26 @@ package com.company.ThirtyDaysOfCode;
 /*NOTES
 * Bubble sort is involved*/
 
-// TODO: 6/9/2022 Double check work in HackerRank 
-
 import java.util.Arrays;
 import java.util.List;
 
 public class Day20 {
     
-    static String bubbleSort(List<Integer> arr) {
+    static String bubbleSort(List<Integer> a) {
         int count = 0;
-
-        for (int i = 0; i < arr.size() - 1; i++) {
-            if (arr.get(i) != i + 1){
-                int track = i;
-                while (arr.get(i) != i + 1){
-                    track++;
+        for (int i = 0; i < a.size(); i++) {
+            for (int j = 0; j < a.size() - 1; j++) {
+                if (a.get(j) > a.get(j + 1)){
+                    int temp = a.get(j);
+                    a.set(j, a.get(j + 1));
+                    a.set(j + 1, temp);
+                    count++;
                 }
-                int temp = arr.get(track);
-                arr.get(track).equals(arr.get(i));
-                arr.get(i).equals(temp);
-                count++;
             }
-            
+            if (count == 0) break;
         }
-        return "Array is sorted in " + count + " swaps. \nFirst Element: " + arr.get(0) + "\nLast Element: " + arr.get(arr.size());
+
+        return "Array is sorted in " + count + " swaps. \nFirst Element: " + a.get(0) + "\nLast Element: " + a.get(a.size() -1 );
     }
 
     public static void main(String[] args) {
